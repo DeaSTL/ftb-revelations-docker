@@ -3,12 +3,13 @@ version: '3.2'
 
 services:
   minecraft:
-    image: ftb-revelations:latest
+    image: ftb-revelations:latest #What ever you called the image on your local system
     volumes:
-      - ./minecraft:/minecraft
+      - ./minecraft:/minecraft #If you would like to put the volume somewhere else
     environment:
-      MAX_MEMORY: 6G
-      MIN_MEMORY: 6G
-      PORT: 25565
-    restart: always
+      MAX_MEMORY: 6G #Adjust max memory
+      MIN_MEMORY: 6G #Adjust min memory
+    ports:
+      - 25565:25565 #Adjust the external port here --> 25565:25565 <-- Don't touch this one
+    restart: always # Auto restarting
       

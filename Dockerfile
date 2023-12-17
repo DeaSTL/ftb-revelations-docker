@@ -41,16 +41,15 @@ RUN ./serverinstall_*
 RUN rm serverinstall_*
 
 
+RUN echo 'By building this image you accept the Minecraft EULA:'
+RUN echo 'https://account.mojang.com/documents/minecraft_eula'
+#Accept the eula
 RUN echo "eula=true" > eula.txt
 
 
 
-
-
-
-
 # Expose minecraft port
-EXPOSE ${PORT}
+EXPOSE 25565
 
 
 
