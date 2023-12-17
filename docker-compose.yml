@@ -1,0 +1,14 @@
+version: '3.2'
+
+
+services:
+  minecraft:
+    image: ftb-revelations:latest
+    volumes:
+      - ./minecraft:/minecraft
+    environment:
+      MAX_MEMORY: 6G
+      MIN_MEMORY: 6G
+      PORT: 25565
+    restart: always
+      
