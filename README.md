@@ -1,7 +1,17 @@
 # FTB Revelations docker container
 
+### Prerequisites
+```
+git
+docker
+docker-compose
+```
+
+
 ### Installation
 ```
+$ git clone https://github.com/DeaSTL/ftb-revelations-docker
+$ cd ftb-revelations-docker
 $ docker build ./ -t ftb-revelations
 ```
 
